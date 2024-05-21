@@ -15,13 +15,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   console.log('[Firebase Fullfillment] Agent Parameters' + agent.parameters);
   
   
-  //session
-  let sesh = new Object ({
-    date: 'string',
-    sessionid: 'string',
-    userid:'string'
-  });
-  
   //service
   const service = new Object ({
     id: "string",
@@ -36,7 +29,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   });
 
   // user
-  
   const user = new Object({
     userid: "string",
     name: "string",
